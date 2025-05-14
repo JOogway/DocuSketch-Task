@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Dimension Visualizer</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    <h1>Room Dimension Visualizer</h1>
+
+    <div class="controls">
+      <label for="roomSelector">Select Room:</label>
+      <select id="roomSelector"></select>
+      <button id="toggleViewButton">Switch to 3D View</button> <!-- because why not -->
+      <button id="changeDimButton">Change Length/Width dimension</button>
+    </div>
+
+    <div class="dimension-labels">
+       <p>Selected Length: <span id="lengthValueLabel">N/A</span></p>
+       <p>Selected Width/Height: <span id="widthValueLabel">N/A</span></p>
+    </div>
+
+    <canvas id="roomCanvas" width="700" height="700"></canvas>
+
+    <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>
